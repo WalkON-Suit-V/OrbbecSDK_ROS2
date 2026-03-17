@@ -79,16 +79,16 @@ def generate_launch_description():
         DeclareLaunchArgument('preset_firmware_path', default_value=''),
         DeclareLaunchArgument('load_config_json_file_path', default_value=''),
         DeclareLaunchArgument('export_config_json_file_path', default_value=''),
-        DeclareLaunchArgument('uvc_backend', default_value='libuvc'),#libuvc or v4l2
+        DeclareLaunchArgument('uvc_backend', default_value='v4l2'),#libuvc or v4l2
         DeclareLaunchArgument('point_cloud_qos', default_value='default'),
         DeclareLaunchArgument('enable_point_cloud', default_value='true'),
         DeclareLaunchArgument('point_cloud_decimation_filter_factor', default_value='1'),
         DeclareLaunchArgument('enable_colored_point_cloud', default_value='false'),
         DeclareLaunchArgument('cloud_frame_id', default_value=''),
         DeclareLaunchArgument('connection_delay', default_value='10'),
-        DeclareLaunchArgument('color_width', default_value='0'),
-        DeclareLaunchArgument('color_height', default_value='0'),
-        DeclareLaunchArgument('color_fps', default_value='0'),
+        DeclareLaunchArgument('color_width', default_value='640'),
+        DeclareLaunchArgument('color_height', default_value='480'),
+        DeclareLaunchArgument('color_fps', default_value='30'),
         DeclareLaunchArgument('color_format', default_value='ANY'),
         DeclareLaunchArgument('enable_color', default_value='true'),
         DeclareLaunchArgument('color_qos', default_value='default'),
@@ -120,9 +120,9 @@ def generate_launch_description():
         DeclareLaunchArgument('color_denoising_level', default_value='-1'),#0: Auto; 1-8: higher values indicate stronger denoising.
         #Note: The color_denoising_level configuration is supported only when AE is enabled, and requires new firmware support.
 
-        DeclareLaunchArgument('depth_width', default_value='0'),
-        DeclareLaunchArgument('depth_height', default_value='0'),
-        DeclareLaunchArgument('depth_fps', default_value='0'),
+        DeclareLaunchArgument('depth_width', default_value='640'),
+        DeclareLaunchArgument('depth_height', default_value='480'),
+        DeclareLaunchArgument('depth_fps', default_value='30'),
         DeclareLaunchArgument('depth_format', default_value='ANY'),
         DeclareLaunchArgument('enable_depth', default_value='true'),
         DeclareLaunchArgument('depth_qos', default_value='default'),
