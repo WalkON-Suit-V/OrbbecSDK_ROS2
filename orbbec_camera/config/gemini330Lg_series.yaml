@@ -78,13 +78,13 @@ orbbec_ros:
             ir_brightness: -1
 
         imu:
-            enable_accel: false
-            accel_rate: "200hz"
+            enable_accel: true
+            accel_rate: "100hz"
             accel_range: "4g"
-            enable_gyro: false
-            gyro_rate: "200hz"
+            enable_gyro: true
+            gyro_rate: "100hz"
             gyro_range: "1000dps"
-            enable_sync_output_accel_gyro: false
+            enable_sync_output_accel_gyro: true
             linear_accel_cov: 0.01
             angular_vel_cov: 0.01
 
